@@ -1,0 +1,49 @@
+.confirm-window {
+  position: absolute;
+  z-index: 2;
+
+  top: 40%;
+  left: 30%;
+  right: 30%;
+  bottom: 40%;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  border: none;
+  background: rgb(231, 214, 19);
+  background: radial-gradient(
+    circle,
+    rgba(231, 214, 19, 1) 30%,
+    rgba(214, 145, 17, 1) 75%,
+    rgba(28, 217, 228, 1) 98%
+  );
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+}
+
+.confirm-text {
+  font-family: "Montserrat";
+  font-size: 26px;
+}
+
+.delete-button {
+  margin-right: 10px;
+}
+.back-button {
+  margin-left: 10px;
+}
+
+.delete-button,
+.back-button {
+  width: 80px;
+  height: 50px;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  filter: blur(0px);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 16px;
+}

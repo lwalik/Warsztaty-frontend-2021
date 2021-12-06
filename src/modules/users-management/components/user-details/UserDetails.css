@@ -1,0 +1,72 @@
+@keyframes animate-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.user-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  animation: animate-in-left 0.4s ease-in-out forwards;
+}
+
+.user-details h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Montserrat";
+}
+
+.user-details > span {
+  color: white;
+  font-family: "Montserrat";
+}
+
+.user-details img {
+  width: 100%;
+  height: 100%;
+  filter: blur(7px);
+}
+
+.user-details button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 22%;
+  right: 20%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  border-radius: 30%;
+  border: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.user-details button > span {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.user-details p {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 30%;
+  right: 30%;
+  color: #ffffff;
+}
